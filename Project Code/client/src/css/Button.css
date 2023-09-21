@@ -1,0 +1,23 @@
+.button {
+
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: white;
+  
+}
+
+.button:hover {
+
+    margin-top: 20px;
+    background-color: #db1a3e;
+    color: white;
+
+}
+
+.button:focus {
+
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: white;
+
+}

@@ -1,0 +1,19 @@
+.background {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.custom-container {
+  margin-top: 50px;
+  height: "90%";
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+}

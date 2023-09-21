@@ -1,0 +1,14 @@
+.go-next-logo-wrapper {
+    display:flex;
+    flex-wrap: nowrap;
+    .go-next-logo {
+        font-family: 'Faster One', cursive;
+    }
+    .go-next-logo:first-child {
+        color: black;
+    }
+    .go-next-logo:last-child {
+        z-index: -1;
+    }
+    width : 100%;
+}

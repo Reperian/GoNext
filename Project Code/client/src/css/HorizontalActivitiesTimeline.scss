@@ -1,0 +1,67 @@
+.horizontal-timeline {
+    display: flex;
+    max-height: 35vh;
+    overflow-y:scroll;
+}
+
+
+.horizontal-timeline .items {
+  border-top: 3px solid #e9ecef;
+  width: 100%;
+}
+
+.horizontal-timeline .items .items-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+
+
+.horizontal-timeline .items .items-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+
+
+.horizontal-timeline .items .items-list .event-date {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 8px;
+  background-color: var(--primary);
+}
+
+@media (min-width: 786px) {
+  .horizontal-timeline .items .items-list {
+    display: inline-block;
+    width: 300px;
+    margin: 0 1rem;
+    padding-top: 45px;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    top: -40px;
+  }
+  
+  
+  .horizontal-timeline {
+    padding-top: 40px;
+    overflow-x:scroll;
+    height:inherit;
+    .items {
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+  }
+}

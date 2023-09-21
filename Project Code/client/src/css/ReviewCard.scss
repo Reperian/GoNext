@@ -1,0 +1,123 @@
+.background {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1000px;
+    gap: 20px;
+  }
+  
+  .review-card {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .review-text {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        gap: 5px;      
+        width: 100%;  
+        overflow-wrap: normal;
+    
+        .review-card-top {
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            width: 100%;
+
+            .timestamp {
+                align-items: flex-end;
+            }
+    
+        }
+
+        .review-card-bottom {
+
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            border-top: 1px solid lightgrey;
+            margin-right: 20px;
+
+        }
+        
+        .description {
+            margin-right: 20px;
+        }
+    
+      }
+  }
+
+  .reply-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin: 10px;
+    border-left: 3px solid lightgrey;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    overflow: scroll;
+
+    .reply-card-top {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+
+        .timestamp {
+            align-items: flex-end;
+        }
+
+    }
+
+    .reply-card-bottom {
+
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    
+    .reply {
+    }
+
+}
+  
+  @media (max-width: 1100px) {
+    .dashboard-container {
+      width: 90%;
+      flex-wrap: wrap;
+    }
+    .tabs-container {
+      width: 90%;
+    }
+  }
+}

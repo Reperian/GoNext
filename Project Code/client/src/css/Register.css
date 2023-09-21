@@ -1,0 +1,49 @@
+.background {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.custom-container {
+  margin-top: 50px;
+  height: "90%";
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+}
+
+.button {
+
+  margin-top: 20px;
+  background-color: var(--primary);
+  color: white;
+
+}
+
+.button:hover {
+
+  margin-top: 20px;
+  background-color: #db1a3e;
+  color: white;
+
+}
+
+.button:focus {
+
+  margin-top: 20px;
+  background-color: var(--primary);
+  color: white;
+
+}
+
+.signin-link{
+
+  align-items: center;
+  justify-content: center;
+}

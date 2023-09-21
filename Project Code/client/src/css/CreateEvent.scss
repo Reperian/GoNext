@@ -1,0 +1,214 @@
+/* .CE-background {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+} */
+
+.CE-container {
+  padding-top: 100px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content:space-between;
+}
+
+.CE-container h4 {
+  margin-bottom: 10px;
+}
+
+.CE-basicInfo {
+  margin-bottom: 50px;
+}
+
+.place-predict-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  border: 1px solid lightgray;
+}
+.CE-ThumbnailContainer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.CE-Thumbnail {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+}
+
+.CE-DragDrop {
+  max-width:100% !important;
+  width: 70% !important;
+  margin: auto;
+  cursor: pointer;
+}
+
+.CE-gallery {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.CE-imageGallery-wrapper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+}
+
+.CE-imageGallery-background {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  scale: 1.2 1.37;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+.CE-imageGallery {
+  position: absolute;
+  width: inherit;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CE-addImageGallery {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.place-predict-text {
+  margin: 0;
+  padding: 10px;
+}
+
+.CE-selectedchips {
+  grid-column: 1/9;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+.CE-chips {
+  grid-column: 1/9;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.CE-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.CE-seatingbutton {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.CE-AddActivities {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.CE-AddActivities p {
+  margin: 0;
+}
+
+.CE-Activity {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.CE-deleteActivity {
+  margin-top: 24px !important;
+  height: 24px;
+  padding: 0 !important;
+}
+
+.deletable {
+  height: inherit;
+  background-color: transparent;
+  transition: background-color ease-out 0.1s;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url(../Images/delete-icon.svg);
+    background-size: 5rem;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+}
+
+.place-predict-text:hover {
+  background: lightgray;
+}
+
+.CE-basicInfo Form.label {
+  font-size: 200%;
+}
+
+.mb-3 {
+  margin-bottom: 40px !important;
+}
+
+@media (max-width: 1100px) {
+  .CE-container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .CE-container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
